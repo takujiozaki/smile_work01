@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケートシステム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+    <h1>アンケートにお答えください</h1>
+    <form action="" method="post">
+        <h2>好きな作品は？</h2>
+        <div class="formrow">
+            <div>
+                <label for="car-std"><img src="images/car-std.png" alt="標準タイプ"></label>
+                <input type="radio" name="favorite" id="car-std" value="car-std">
+            </div>
+            <div>
+                <label for="car-taxi"><img src="images/car-taxi.png" alt="タクシーデザイン"></label>
+                <input type="radio" name="favorite" id="car-taxi" value="car-taxi">
+            </div>
+            <div>
+                <label for="car-police"><img src="images/car-police.png" alt="パトカー"></label>
+                <input type="radio" name="favorite" id="car-police" value="car-police">
+            </div>
+        </div>
+        <h2>あなたの年齢層は？</h2>
+        <select name="age" id="">
+            <option value="10">10代</option>
+            <option value="20">20代</option>
+            <option value="30">30代</option>
+            <option value="40">40代</option>
+            <option value="50">50代</option>
+        </select>
+        <h2>あなたの性別は</h2>
+        <div class="formrow">
+            <div>
+                <label for="male">男性</label>
+                <input type="radio" name="gender" id="male" value="男性">
+            </div>
+            <div>
+                <label for="female">女性</label>
+                <input type="radio" name="gender" id="female" value="女性">
+            </div>
+        </div>
+        <button type="submit">解答</button>
+    </form>
+    </div> 
+</body>
+</html>
