@@ -1,6 +1,8 @@
 <?php
 //data記録用ファイル
 define("DATA", './data.csv');
+//リダイレクト先
+define("REDIRECTTO", './result-graph.html');
 /**
  * POST:リクエストデータをCSVに記録
  * GET：CSVを読み込みJSONで出力
@@ -24,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     //ファイルを閉じる
     fclose($fp);
     //結果ページにリダイレクト
-    header('location:./result.html');
+    header('location:'.REDIRECTTO);
     exit();
 }else{
     //ファイルの存在を調べる

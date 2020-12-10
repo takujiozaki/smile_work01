@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>アンケートシステム</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="wrap">
     <h1>アンケートにお答えください</h1>
     <form action="data.php" method="post">
         <h2>好きな作品は？</h2>
-        <div class="formrow">
+        <div class="form-row">
             <div>
                 <label for="car-std"><img src="images/car-std.png" alt="標準タイプ"></label>
                 <input type="radio" name="favorite" id="car-std" value="car-std">
@@ -26,7 +27,7 @@
             </div>
         </div>
         <h2>あなたの年齢層は？</h2>
-        <select name="age" id="">
+        <select class="form-control" name="age" id="">
             <option value="10">10代</option>
             <option value="20">20代</option>
             <option value="30">30代</option>
@@ -34,7 +35,7 @@
             <option value="50">50代</option>
         </select>
         <h2>あなたの性別は</h2>
-        <div class="formrow">
+        <div class="form-row">
             <div>
                 <label for="male">男性</label>
                 <input type="radio" name="gender" id="male" value="男性">
